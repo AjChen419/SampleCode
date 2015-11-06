@@ -1,0 +1,13 @@
+#
+# Barometer devices
+#
+
+config BOSCHBMP180
+		tristate "Bosch BMP180 Barometer sensor"
+		depends on I2C && SYSFS
+		help
+		  If you say yes here you get  support  for  the  Bosch BMP180 
+		  Barometer sensor.
+
+		  This driver can also be built as a module. If so, the module
+		  will be called BOSCHBMP180.
